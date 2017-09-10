@@ -1,0 +1,121 @@
+\documentclass[11pt, letterpaper]{article}
+\usepackage[letterpaper,margin=0.5in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{mdwlist}
+\usepackage[T1]{fontenc}
+
+% url support
+\usepackage[hidelinks]{hyperref}
+
+% font
+\usepackage{tgpagella}
+
+% space out text
+\usepackage{soul}
+
+%special characters
+\usepackage{marvosym}
+
+\pagestyle{empty}
+\setlength{\tabcolsep}{0em}
+
+% manual indentation for non-lists
+\newenvironment{indentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{ #1 } }%
+	\item[]%
+}
+{\end{list}}
+
+% unindent non-lists
+\newenvironment{unindentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{-0.5#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% format two pieces of text, one left aligned and one right aligned
+\newcommand{\splitrow}[2]
+{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+	#1 &
+	#2 \\
+\end{tabular*}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% CONTENT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+
+\begin{center}
+
+{\Huge \textsc{ \so{ suresh } }}
+
+
+\so{ udaipur, rajasthan 313001}\\
+
+\so{\Telefon 1234567890 }
+\so{\Letter suresh@gmail.com}
+\end{center}
+
+\hrule
+\vspace{-0.4em}
+\subsection*{\so{TECHNICAL SKILLS}}
+
+\begin{indentsection}{\parindent}
+\hyphenpenalty=1000
+\begin{description*}
+	\item[Languages:]
+	c++\item[Frameworks:]
+	django\item[Databases:]
+	mysql\item[Softwares:]
+	msoffice\item[Operating Systems:]
+	linux
+\end{description*}
+\end{indentsection}
+
+\hrule
+\vspace{-0.4em}
+\subsection*{\so{WORK EXPERIENCE}}
+
+\begin{itemize}
+	\parskip=0.1em
+
+
+	\item
+      \splitrow{\textbf{ tcs }}{\textbf{ mumbai }}\\
+    \splitrow
+		{\emph{ software engineer }}
+		{\emph{ jan 2013 - apr 2015 }}
+    
+	\begin{itemize*}
+    
+		\item mentor to trainee\vspace{0.4em}
+    
+	\end{itemize*}
+
+\end{itemize}
+
+
+\hrule
+\vspace{-0.4em}
+\subsection*{\so{EDUCATION}}
+
+\begin{itemize}
+	\parskip=0.1em
+
+	\item 
+	\splitrow
+		{\textbf{ ctae }}
+		{\textbf{ udaipur }}
+	\\
+	\splitrow
+		{\emph{ btech }}
+		{\emph{ may 2013-mar 2015 }}
+
+\end{itemize}
+
+\end{document}

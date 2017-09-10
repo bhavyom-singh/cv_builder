@@ -1,0 +1,133 @@
+\documentclass[11pt, letterpaper]{article}
+\usepackage[letterpaper,margin=0.5in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{mdwlist}
+\usepackage[T1]{fontenc}
+
+% url support
+\usepackage[hidelinks]{hyperref}
+
+% font
+\usepackage{tgpagella}
+
+% space out text
+\usepackage{soul}
+
+%special characters
+\usepackage{marvosym}
+
+\pagestyle{empty}
+\setlength{\tabcolsep}{0em}
+
+% manual indentation for non-lists
+\newenvironment{indentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{ #1 } }%
+	\item[]%
+}
+{\end{list}}
+
+% unindent non-lists
+\newenvironment{unindentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{-0.5#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% format two pieces of text, one left aligned and one right aligned
+\newcommand{\splitrow}[2]
+{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+	#1 &
+	#2 \\
+\end{tabular*}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% CONTENT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+
+\begin{center}
+
+{\Huge \textsc{ \so{ aditi } }}
+
+
+
+
+\so{\Telefon 67358259 }
+\so{\Letter ad@gmail.com}
+\end{center}
+
+\hrule
+\vspace{-0.4em}
+\subsection*{\so{TECHNICAL SKILLS}}
+
+\begin{indentsection}{\parindent}
+\hyphenpenalty=1000
+\begin{description*}
+	\item[Languages:]
+	cpp,java\item[Frameworks:]
+	jango\item[Databases:]
+	my sql\item[Softwares:]
+	idle\item[Operating Systems:]
+	unix
+\end{description*}
+\end{indentsection}
+
+\hrule
+\vspace{-0.4em}
+\subsection*{\so{WORK EXPERIENCE}}
+
+\begin{itemize}
+	\parskip=0.1em
+
+
+	\item
+      \splitrow{\textbf{ tcs }}{\textbf{ noida }}\\
+    \splitrow
+		{\emph{ trainee }}
+		{\emph{ 2015-16 }}
+    
+	\begin{itemize*}
+    
+		\item bgdjujxohsjkcnvkcke r4jdyherjdgrfycxjrcujxhrfcjhtkigrv thyhyujhbgvjgfkchrmfvcjrglvkefl,kchrf,kvcfe vtg hyjymt\vspace{0.4em}
+    
+	\end{itemize*}
+
+	\item
+      \splitrow{\textbf{ ibm }}{\textbf{ banglore }}\\
+    \splitrow
+		{\emph{ senior trainee }}
+		{\emph{ 2016-2017 }}
+    
+	\begin{itemize*}
+    
+		\item bgyvyscfhibffikoisfdgtytgsfdjnihtyfrtjnisdjmuygytfdsfkmjkfngytft6fgchsiujkdcuygytgdsjnkmolhusdtgtfefjbjfnijdfhnhgtfdcnk\vspace{0.4em}
+    
+	\end{itemize*}
+
+\end{itemize}
+
+
+\hrule
+\vspace{-0.4em}
+\subsection*{\so{EDUCATION}}
+
+\begin{itemize}
+	\parskip=0.1em
+
+	\item 
+	\splitrow
+		{\textbf{ ctae }}
+		{\textbf{ udaipur }}
+	\\
+	\splitrow
+		{\emph{ btech }}
+		{\emph{ 2017 }}
+
+\end{itemize}
+
+\end{document}
